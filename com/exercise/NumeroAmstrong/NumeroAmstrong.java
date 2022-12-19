@@ -1,6 +1,6 @@
-package NumeroAmstrong;
+package com.exercise.NumeroAmstrong;
 
-public class Main {
+public class NumeroAmstrong {
 
     public static void main(String[] args) {
         /* Variables para el número original y su último dígito */
