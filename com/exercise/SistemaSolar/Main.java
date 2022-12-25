@@ -1,9 +1,18 @@
 package com.exercise.SistemaSolar;
 
+import java.util.Hashtable;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+        SistemaSolar planata3 = new SistemaSolar("Mercurio",0,121232341,123213987,123232412,160000000, SistemaSolar.tipoPlaneta.gaseoso,true,"Tierra");
+        System.out.println(planata3.periodoOrb());
+        System.out.println(planata3);
+    }
 
-        SistemaSolar planeta = new SistemaSolar("Mercurio",0,121232341,123213987,123232412,160000000, SistemaSolar.tipoPlaneta.gaseoso,true);
+
+
+        /**SistemaSolar planeta = new SistemaSolar("Mercurio",0,121232341,123213987,123232412,160000000, SistemaSolar.tipoPlaneta.gaseoso,true);
         System.out.println(planeta);
         System.out.println(planeta.obtenerMasa());
         System.out.println(planeta.toString());
@@ -13,6 +22,6 @@ public class Main {
         System.out.println(planeta2);
         System.out.println(planeta2.obtenerMasa());
         System.out.println(planeta2.toString());
-        System.out.println(planeta2.planetaExterior());
+        System.out.println(planeta2.planetaExterior()); **/
     }
-}
+

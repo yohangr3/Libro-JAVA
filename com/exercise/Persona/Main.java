@@ -7,5 +7,7 @@ public class Main {
         System.out.println(persona1);
 
         Persona persona2 = new Persona("Florentino","Daza",1213342,1946,"Colombia",'h');
+
+
     }
 }
