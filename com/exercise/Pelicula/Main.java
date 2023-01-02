@@ -12,7 +12,7 @@ public class Main {
         System.out.println("La pelicula tiene una valoración " + pelicula1.calcularValoracion());
         System.out.println("La pelicula tiene una valoración " + pelicula2.calcularValoracion());
         System.out.println("Las peliculas son similares " + pelicula1.esSimilar(pelicula2));
-
+        System.out.println(pelicula1.imprimirCartel());
 
 
     }

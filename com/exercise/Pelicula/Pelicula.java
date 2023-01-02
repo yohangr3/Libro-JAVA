@@ -113,4 +113,12 @@ public class Pelicula {
             return false;
         }
     }
+
+    public String imprimirCartel(){
+        return "-------- " + nombre + " -------- \n" +
+                "         "+"****" + "         \n"+
+                "         "+año + "         \n"+
+                "         "+tipoGenero.DRAMA+","+tipoGenero.ACCIÓN+","+tipoGenero.SUSPENSO+"\n" +"         \n"+
+                "         "+director;
+    }
 }
