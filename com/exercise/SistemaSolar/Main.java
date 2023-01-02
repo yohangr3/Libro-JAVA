@@ -5,9 +5,11 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        SistemaSolar planata3 = new SistemaSolar("Mercurio",0,121232341,123213987,123232412,160000000, SistemaSolar.tipoPlaneta.gaseoso,true,"Tierra");
+        SistemaSolar planata3 = new SistemaSolar("Mercurio",0,121232341,123213987,123232412,160000000, SistemaSolar.tipoPlaneta.gaseoso,true);
         System.out.println(planata3.periodoOrb());
         System.out.println(planata3);
+        SistemaSolar planeta4 = new SistemaSolar("Mercurio",0,121232341,123213987,123232412,160000000, SistemaSolar.tipoPlaneta.gaseoso,true,"Tierra","Marte");
+        System.out.println(planeta4);
     }
 
 

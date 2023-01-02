@@ -17,7 +17,9 @@ public class SistemaSolar {
     tipoPlaneta tipo;
     Boolean observable = false;
 
-    String planeta;
+    String periodoOrbital;
+
+    String periodoRotacional;
 
 
 
@@ -32,7 +34,7 @@ public class SistemaSolar {
         this.observable = observable;
     }
 
-    public SistemaSolar(String nombre, int cantidadsatelites, double masa, double volumen, int diametro, int distanciaSol, tipoPlaneta tipo, Boolean observable, String planeta) {
+    public SistemaSolar(String nombre, int cantidadsatelites, double masa, double volumen, int diametro, int distanciaSol, tipoPlaneta tipo, Boolean observable, String periodoOrbital, String periodoRotacional) {
         this.nombre = nombre;
         Cantidadsatelites = cantidadsatelites;
         this.masa = masa;
@@ -41,7 +43,8 @@ public class SistemaSolar {
         this.distanciaSol = distanciaSol;
         this.tipo = tipo;
         this.observable = observable;
-        this.planeta = planeta;
+        this.periodoOrbital = periodoOrbital;
+        this.periodoRotacional = periodoRotacional;
     }
 
     @Override
@@ -53,8 +56,10 @@ public class SistemaSolar {
                 ", volumen=" + volumen +
                 ", diametro=" + diametro +
                 ", distanciaSol=" + distanciaSol +
+                ", tipo=" + tipo +
                 ", observable=" + observable +
-                ", planeta=" + planeta +
+                ", periodoOrbital='" + periodoOrbital + '\'' +
+                ", periodoRotacional='" + periodoRotacional + '\'' +
                 '}';
     }
 
@@ -72,6 +77,7 @@ public class SistemaSolar {
     }
 
     public Object periodoOrb(){
+        //Periodo Orbital en horas
         Scanner sc = new Scanner(System.in);
         System.out.println("Ingrese un planeta : ");
         String planeta = sc.nextLine();
@@ -102,6 +108,45 @@ public class SistemaSolar {
 
             case "Pluton":
                 return (248);
+
+            default:{
+                return ("Opción incorrecta.");
+            }
+        }
+    }
+
+    public Object periodoRot(){
+        //Periodo Rotacional en horas
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese un planeta : ");
+        String planeta = sc.nextLine();
+        switch (planeta){
+            case "Mercurio":
+                return (1405);
+
+            case "Venus":
+                return (5832);
+
+            case "Tierra":
+                return (24);
+
+            case "Marte":
+                return (25);
+
+            case "Jupiter":
+                return (9);
+
+            case "Saturno":
+                return (10);
+
+            case "Urano":
+                return (17);
+
+            case "Neptuno":
+                return (16);
+
+            case "Pluton":
+                return (6837);
 
             default:{
                 return ("Opción incorrecta.");
