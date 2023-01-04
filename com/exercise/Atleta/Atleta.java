@@ -21,6 +21,8 @@ public class Atleta {
         return tiempoEquipo;
     }
 
+
+
     public void imprimir() {
         System.out.println("Identificador del atleta = " + identificador);
         System.out.println("Nombre del atleta = " + nombreAtleta);
