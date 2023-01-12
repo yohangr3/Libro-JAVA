@@ -10,10 +10,16 @@ public class Atleta {
     static double tiempoEquipo;
 
     public Atleta(String nombreAtleta,double tiempoPrueba){
-        contador++;
-        identificador=contador;
         this.nombreAtleta=nombreAtleta;
         this.tiempoPrueba=tiempoPrueba;
+    }
+
+    public Atleta() {
+    }
+
+    {
+        contador++;
+        identificador = contador;
     }
 
     public double correr(){

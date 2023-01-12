@@ -9,12 +9,14 @@ public class Main {
         Atleta atleta3 = new Atleta("Diego Palomeque",9.53);
         atleta1.correr();
         Atleta atleta4 = new Atleta("Gilmar Herrera",9.29);
+        Atleta atleta5 = new Atleta();
         atleta1.correr();
         Atleta.imprimirSeleccion();
         atleta1.imprimir();
         atleta2.imprimir();
         atleta3.imprimir();
         atleta4.imprimir();
+        atleta5.imprimir();
         Atleta.imprimirTiempoEquipo();
 
 
